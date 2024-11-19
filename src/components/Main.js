@@ -1,4 +1,5 @@
 import React from "react"
+
 export default function Main() {
     return(
         <div>
@@ -9,9 +10,6 @@ export default function Main() {
                 <h2 className="main--h2">INFORMATION</h2>
                 <p>INFORMATION WORDS</p>
                 <hr></hr>
-                <div className="main--h2">
-                    <h1>INSERT SURVEY HERE</h1>
-                </div>
             </main>
         </div>
     )

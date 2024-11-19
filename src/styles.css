@@ -49,6 +49,31 @@ main {
     padding: 30px 30px
 }
 
+.basic--h4 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: -0.05em;
+    color: white;
+    padding: 0 5px;
+}
+
+.entry-req {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    color: white;
+    padding: 2px 10px;
+}
+
+.basic--entry {
+    margin: 2px;
+    padding: 1px 5px;
+}
+
+.basic--nextbtn {
+    padding: 2px 40px;
+}
+
 footer {
     padding: 60px 30px;
     color: white;
