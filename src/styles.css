@@ -74,6 +74,14 @@ main {
     padding: 2px 40px;
 }
 
+.thanks--h5 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: -0.05em;
+    color: white;
+    padding: 30px 30px;
+}
+
 footer {
     padding: 60px 30px;
     color: white;

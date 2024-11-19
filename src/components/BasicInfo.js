@@ -19,8 +19,8 @@ export default function BasicInfo({ addBasicData }) {
     } else {
       // Call the addBasicData function provided by the parent component
       addBasicData(name, email, contact);
-      // Navigate to the '/questions' route
-      navigate('/questions');
+      // Navigate to the '/thanks' route
+      navigate('/thanks');
     }
   }
 

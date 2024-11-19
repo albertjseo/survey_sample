@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Main from "./components/Main"
 import Footer from "./components/Footer"
 import BasicInfo from "./components/BasicInfo"
+import ThankYou from "./components/ThankYou"
 
 import './styles.css'
 
@@ -36,6 +37,7 @@ export default function App() {
       <Router>
           <Routes>
             <Route path='/' element={<BasicInfo addBasicData={addBasicData} />} />
+            <Route path='/thanks' element={<ThankYou />}/>
           </Routes>
       </Router>
       <Footer />
