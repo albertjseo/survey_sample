@@ -25,67 +25,57 @@ export default function BasicInfo({ addBasicData }) {
   }
 
   return (
-    <div className="container-fluid qform">
-      <div className="col-md-5 m-auto">
-        <div className="mt-3">
-          <div className="card text-left h-100">
-            <div className="card-body my-3">
-              <form onSubmit={submit} className="basic--nextbtn">
-                <label htmlFor="">
-                  <h4 className="basic--h4">Basic Details</h4>
-                </label>
-                <div className="entry-req">
-                  <label htmlFor="">
-                    <b>1.</b> Name:
-                  </label>
-                  {/* Input field for name */}
-                  <input
-                    type="text"
-                    name="name"
-                    value={name}
-                    onChange={(e) => { setName(e.target.value) }}
-                    className='basic--entry'
-                    placeholder='Enter your Name'
-                    autoComplete='off'
-                  />
-                </div>
-                <div className="entry-req">
-                  <label htmlFor="">
-                    <b>2.</b> Email:
-                  </label>
-                  {/* Input field for email */}
-                  <input
-                    type="email"
-                    name='email'
-                    value={email}
-                    onChange={(e) => { setEmail(e.target.value) }}
-                    className='basic--entry'
-                    placeholder='Enter your Email'
-                    autoComplete='off'
-                  />
-                </div>
-                <div className="entry-req">
-                  <label htmlFor="">
-                    <b>3.</b> Contact No.:
-                  </label>
-                  {/* Input field for contact number */}
-                  <input
-                    type="tel"
-                    name='contact'
-                    value={contact}
-                    onChange={(e) => { setContact(e.target.value) }}
-                    className='basic--entry'
-                    placeholder='Enter your Contact No.'
-                    autoComplete='off'
-                  />
-                </div>
-                {/* Submit button */}
-                <button type='submit' className='btn btn-success mx-3'>Next</button>
-              </form>
-            </div>
-          </div>
+      <form onSubmit={submit} className="basic--nextbtn">
+        <label htmlFor="">
+          <h4 className="basic--h4">Basic Details</h4>
+        </label>
+        <div className="entry-req">
+          <label htmlFor="">
+            <b>1.</b> Name:
+          </label>
+          {/* Input field for name */}
+          <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={(e) => { setName(e.target.value) }}
+              className='basic--entry'
+              placeholder='Enter your Name'
+              autoComplete='off'
+          />
         </div>
-      </div>
-    </div>
+        <div className="entry-req">
+          <label htmlFor="">
+            <b>2.</b> Email:
+          </label>
+          {/* Input field for email */}
+          <input
+              type="email"
+              name='email'
+              value={email}
+              onChange={(e) => { setEmail(e.target.value) }}
+              className='basic--entry'
+              placeholder='Enter your Email'
+              autoComplete='off'
+          />
+        </div>
+        <div className="entry-req">
+          <label htmlFor="">
+            <b>3.</b> Contact No.:
+          </label>
+          {/* Input field for contact number */}
+          <input
+              type="tel"
+              name='contact'
+              value={contact}
+              onChange={(e) => { setContact(e.target.value) }}
+              className='basic--entry'
+              placeholder='Enter your Contact No.'
+              autoComplete='off'
+          />
+        </div>
+        {/* Submit button */}
+        <button type='submit' className='btn btn-success mx-3'>Next</button>
+      </form>
   )
 }

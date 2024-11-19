@@ -15,7 +15,7 @@ export default function App() {
     useEffect(() => {
     localStorage.setItem('data', JSON.stringify(basicData));
     }, [basicData]);
-      // Function to add basicData to state and localStorage
+    // Function to add basicData to state and localStorage
     const addBasicData = (name, email, contact) => {
         // Create an object with the provided basic data
         const myBasicData = {
